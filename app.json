@@ -14,5 +14,23 @@
     ],
     "repository": "https://github.com/pamigomp/angularjs-template",
     "success_url": "/",
-    "addons": []
+    "addons": [],
+      "scripts": {
+      "postdeploy": "echo this is a postdeploy script"
+    },
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "standard-1x"
+    },
+   }
+  },
+  "environments": {
+    "test": {
+      "scripts": {
+        "test-setup": "echo Setting up environment",
+        "test": "echo tests are run here "
+      }
+    }
+  }
 }
